@@ -18,7 +18,9 @@ public class Main {
         String conta = sc.nextLine();
         novaConta.setConta(conta);
 
-        novaConta.depositar(10123);
+        System.out.println("Digite o saldo inical a ser depositado: ");
+        double saldoM = sc.nextDouble();
+        novaConta.depositar(saldoM);
         
 
         novaConta.dadosConta();
