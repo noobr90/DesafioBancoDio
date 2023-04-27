@@ -32,5 +32,10 @@ public class contaCorrente extends banco{
         contaDestino.depositar(valorTransferencia);
     }
 
-    
+    public void dadosConta(){
+        System.out.println("Nome: "+super.getTitular());
+        System.out.println("Agencia: "+super.getAgencia());
+        System.out.println("Conta: "+super.getConta());
+        System.out.println("Saldo em conta: "+contaCorrente.getSaldo(saldo));
+    }
 }

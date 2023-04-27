@@ -3,6 +3,8 @@ public abstract class banco {
     private String agencia;
     private String titular;
     private double saldo;
+    
+
 
     public String getConta() {
         return conta;
@@ -22,7 +24,7 @@ public abstract class banco {
     public void setTitular(String titular) {
         this.titular = titular;
     }
-    public double getSaldo(double saldo) {
+    public static double getSaldo(double saldo) {
         return saldo;
     }
     public void setSaldo(double saldo) {
@@ -34,7 +36,8 @@ public abstract class banco {
     public abstract void depositar(double valorSaque);
     public abstract void atualizaSaldo(double saldoAtualizacao);
     public abstract void transferencia(double valorTransferencia, banco contaDestino);
-    
+
     
 
-}
+
+}             
